@@ -1,0 +1,25 @@
+*TEMPLATE
+
+IN ||| cantilevers_data.txt
+
+ID	length	width	thickness	f0	Rtip	Kc	density	volume
+
+
+IN ||| tempall.txt
+
+ID	length	width	thickness	f0	Rtip	Kc	density	volume	nper	npp	nperfin	zcmin	dzc	fixzc	a0	Es	q	ham	eta	epsilon2	epsilon1	eps	eps0	sigmat	sigmas	debye	ljmin	lenght
+
+
+OUT ||| ****.dfo
+
+zcdom'1'.dfo'  -->  zcdom'tcases'.dfo'
+tdom'1'.dfo'  -->  tdom'tcases'.dfo'
+inputs'1'.ini'  -->  inputs'tcases'.ini'
+
+OUT ||| pmPosAsp.txt
+
+ID	length	width	thickness	f0	Rtip	Kc	density	volume	nper	npp	nperfin	zcmin	dzc	fixzc	a0	Es	q	ham	eta	epsilon2	epsilon1	eps	eps0	sigmat	sigmas	debye	ljmin	lenght	Asp
+
+OUT ||| pmPosAspFmaxDmin.txt
+
+ID	length	width	thickness	f0	Rtip	Kc	density	volume	nper	npp	nperfin	zcmin	dzc	fixzc	a0	Es	q	ham	eta	epsilon2	epsilon1	eps	eps0	sigmat	sigmas	debye	ljmin	lenght	Asp	dmin	Fmax

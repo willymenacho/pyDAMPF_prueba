@@ -1,0 +1,92 @@
+WE used :
+GNU Fortran (Ubuntu 7.5.0-6ubuntu2) 7.5.0
+Python 3.9.7
+
+||||||||||||||||||||||| FOR PROCESSING INPUTS ||||||||||||||||||||||||||
+
+IN THE TERMINAL:
+
+python3 inputs_processor.py
+
+
+||||||||||||||||||||||||||| FOR f2py COMPILATION ||||||||||||||||||||||||||||||
+
+IN THE TERMINAL:
+
+cd EXECUTE_pyDAMPF/
+
+f2py -c --fcompiler=gnu95 pyDAMPF.f90 -m mypyDAMPF
+cp *.so ~/pyDAMPF/EXECUTE_pyDAMPF/pyDAMPF_BASE/nrun/
+cp *.so ~/pyDAMPF/EXECUTE_pyDAMPF/pyDAMPF_BASE/nrun/runa
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+			         EXECUTE pyDAMPF
+
+|||||||||||||||||||||||||||||||SERIAL METHOD||||||||||||||||||||||||||||||||||||||||
+
+python3 serial_method.py
+
+
+|||||||||||||||||||||||||||||PARALLEL METHOD||||||||||||||||||||||||||||||||||||||||
+
+######## WE CREATE COMPUTATIONAL THREADS #########
+
+python3 parallel_method.py <NUMBER OF THREADS> 
+
+#example
+python3 forparallelv2.py 10
+
+=====================FOR RUN PARALLEL METHOD==========================
+
+########IF YOU WERE TO RUN PYDAMPF ON A CLUSTER OR COMPUTER WITH SBATCH CONFIGURE######
+
+python3 job_parallel_cluster.py <NUMBER OF THREADS>
+
+#example
+python3 job_parallel_cluster.py 10
+
+
+########IF YOU WERE TO RUN PYDAMPF ON A REGULAR COMPUTER######
+python3 job_parallel_computer.py <NUMBER OF THREADS>
+
+#example
+python3 job_parallel_computer.py 10
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+			         ANALYSIS
+			         
+Once the pyDAMPF simulation is finished
+
+|||||||||||||||||||||||||||||||INTERACTIVE METHOD||||||||||||||||||||||||||||||||||
+
+IN THE TERMINAL:
+
+######For Graphical_analysis #############
+
+jupyter notebook Graphical_analysis.ipynb
+
+######For Quantitative_analysis ##########
+
+pip install tabloo
+jupyter notebook Graphical_analysis.ipynb
+
+
+
+|||||||||||||||||||||||||NON INTERACTIVE METHOD|||||||||||||||||||||||||||||||
+
+IN THE TERMINAL:
+
+######For Graphical_analysis #############
+
+python3 Graphical_analysis.py
+
+######For Quantitative_analysis ##########
+
+python3 Quantitative_analysis.py
+
