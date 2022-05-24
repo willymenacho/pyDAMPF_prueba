@@ -11,7 +11,7 @@ setuptools.setup(
     description="pyDAMPF is a tool oriented to the Atomic Force Microscopy (AFM) community, which allows the simulation of the physical properties of materials under variable relative humidity (RH).",
     #long_description=long_description,
     #long_description_content_type="text/markdown",
-    url= git+ssh:"https://git@github.com/willymenacho/pyDAMPF_prueba.git",
+    url= "https://git@github.com/willymenacho/pyDAMPF_prueba.git",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
