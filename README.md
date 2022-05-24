@@ -44,4 +44,9 @@ CPU then all you need is Cython.
 
 You should be able to install Compyle by doing::
 
-  $ pip install compyle
+  $ git clone https://github.com/govarguz/pyDAMPF
+  
+  $ pip install "git+https://github.com/willymenacho/pyDAMPF_prueba.git"
+  
+  
+  
