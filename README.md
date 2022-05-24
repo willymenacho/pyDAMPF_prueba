@@ -41,9 +41,9 @@ Installation
 You should be able to install pyDAMPF by doing::
 
   $ git clone https://github.com/govarguz/pyDAMPF
-  ::
   
   pip install aun tengo problemas espero solucionarlo pronto
+  
   $ pip install "git+https://github.com/willymenacho/pyDAMPF_prueba.git"
   
   
