@@ -6,13 +6,14 @@ pyDAMPF: a Python package for modeling mechanical properties of hygroscopic mate
 
 |CI Status| |Coverage Status| |Documentation Status|
 
-[//]: # ( .. |CI Status| image:: https://github.com/pypr/compyle/actions/workflows/tests.yml/badge.svg)
-[//]: # (    :target: https://github.com/pypr/compyle/actions/workflows/tests.yml)
-[//]: # ( .. |Documentation Status| image:: https://readthedocs.org/projects/compyle/badge/?version=latest)
-[//]: # (  :target: https://compyle.readthedocs.io/en/latest/?badge=latest)
-[//]: # ( :alt: Documentation Status)
-[//]: # ( .. |Coverage Status| image:: https://codecov.io/gh/pypr/compyle/branch/master/graph/badge.svg)
-[//]: # ( :target: https://codecov.io/gh/pypr/compyle)
+
+/*: .. |CI Status| image:: https://github.com/pypr/compyle/actions/workflows/tests.yml/badge.svg
+/*:    :target: https://github.com/pypr/compyle/actions/workflows/tests.yml
+/*: .. |Documentation Status| image:: https://readthedocs.org/projects/compyle/badge/?version=latest
+/*:    :target: https://compyle.readthedocs.io/en/latest/?badge=latest
+/*:    :alt: Documentation Status
+/*: .. |Coverage Status| image:: https://codecov.io/gh/pypr/compyle/branch/master/graph/badge.svg
+/*:  :target: https://codecov.io/gh/pypr/compyle
 
 pyDAMPF is a tool oriented to the Atomic Force Microscopy (AFM) community, which allows the simulation of the physical properties of materials under variable relative humidity (RH).
 
@@ -37,16 +38,16 @@ Documentation and learning material is also available in the form of:
 Installation
 -------------
 
-Compyle is itself largely pure Python but depends on numpy_ and requires
-either Cython_ or PyOpenCL_ or PyCUDA_ along with the respective backends of a
-C/C++ compiler, OpenCL and CUDA. If you are only going to execute code on a
-CPU then all you need is Cython.
-
-You should be able to install Compyle by doing::
+You should be able to install pyDAMPF by doing::
 
   $ git clone https://github.com/govarguz/pyDAMPF
   
+  
+  pip install aun tengo problemas espero solucionarlo pronto
   $ pip install "git+https://github.com/willymenacho/pyDAMPF_prueba.git"
   
   
-  
+Execute pyDAMPF
+-------------
+To run pyDAMPF, it has a simple user's guide README.txt, in this document is explained step by step for a correct use of the simulator.
+
